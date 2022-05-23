@@ -9,8 +9,8 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
-    <script src="./jquery.counterup.min.js"></script>
+    <!-- <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script> -->
+    <!-- <script src="./jquery.counterup.min.js"></script> -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <style>
@@ -195,10 +195,10 @@
     const update_fillbar =(value)=>{
     document.querySelector(".metalcount").innerHTML = `${value}`;
     document.querySelector(".metalfillbar").style.height = `${value}%`;
-    $('.metalcount').counterUp({
-        delay: 10,
-        time: 2000
-    });
+    // $('.metalcount').counterUp({
+    //     delay: 10,
+    //     time: 2000
+    // });
 }
 const update_nonMetalfillbar =(value)=>{
     document.querySelector(".nonmetalcount").innerHTML = `${value}`;
@@ -209,12 +209,12 @@ const update_nonMetalfillbar =(value)=>{
     });
 }
 
-const countie = ()=>{
-    $('.counterNUM').counterUp({
-        delay: 10,
-        time: 1000
-    });
-}
+// const countie = ()=>{
+//     $('.counterNUM').counterUp({
+//         delay: 10,
+//         time: 1000
+//     });
+// }
 
 const readings = async ()=>{
     try {

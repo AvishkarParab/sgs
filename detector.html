@@ -1,7 +1,4 @@
-<?php 
-    session_start();
-    
-?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -147,9 +144,10 @@
        count.innerHTML= `${value}`;
         window.onload=()=>{
             
-            update_fillbar(<?php echo 70 ?>);
-            update_nonMetalfillbar(<?php echo 20 ?>);
+            update_fillbar(70);
+            update_nonMetalfillbar(20);
             countie();
+            readings();
         }
     const update_fillbar =(value)=>{
     document.querySelector(".metalcount").innerHTML = `${value}`;
@@ -174,6 +172,32 @@ const countie = ()=>{
         time: 1000
     });
 }
+
+const readings = async ()=>{
+    try {
+        setInterval(function ( ) {
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+        console.log("heloo");
+        if (this.readyState == 4 && this.status == 200) {
+            var  y = JSON.parse(this.responseText);
+            console.log(y);
+        }
+        };
+            xhttp.open("GET", "http://192.168.171.32/get_reading", true);
+            // xhttp.send();
+        }, 200 ) ;
+
+
+    } catch (error) {
+        
+    }
+}
+
+
+
+
+
 </script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </html>

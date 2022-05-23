@@ -82,7 +82,7 @@
                 $_SESSION["uname"]= $row["fname"];
                 $_SESSION["uid"]= $row["id"];
                 $found = true;
-                header("location:./home.php");
+                header("location:./home.html");
             }
         }
         if(!$found){

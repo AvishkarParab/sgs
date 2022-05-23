@@ -230,7 +230,7 @@ const readings = async ()=>{
             xhttp.open("GET", "http://192.168.171.32/get_reading", true);
             xhttp.setRequestHeader('Access-Control-Allow-Headers','*');
             xhttp.setRequestHeader('Access-Control-Allow-Origin','*');
-            _xhttp.setRequestHeader('Access-Control-Allow-Max-Age','600');
+            xhttp.setRequestHeader('Access-Control-Allow-Max-Age','600');
             xhttp.setRequestHeader('Access-Control-Allow-Methods','PUT,POST,GET,OPTIONS');
 
             xhttp.send();

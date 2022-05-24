@@ -9,11 +9,14 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
         body{
-            background: linear-gradient(to right ,rgba(107, 242, 198, 0.305),rgba(207, 255, 207, 0.205),rgba(107, 242, 198, 0.305)) !important;
+            font-family:'Times New Roman', Times, serif !important;
+            /* background: linear-gradient(to right ,rgba(107, 242, 198, 0.305),rgba(207, 255, 207, 0.205),rgba(107, 242, 198, 0.305)) !important; */
         }
         body{
             scroll-behavior: smooth;
+            
         }
         .percent{
             color: green;
@@ -27,8 +30,14 @@
             background:transparent !important;
         }
         .navbar{
-            background-color: rgba(2, 133, 28, 0.7) !important;
+            position: fixed !important;
+            top: 0;
+            z-index: 100;
+            font-size: 16px;
+            background-color: rgba(3, 122, 213, 0.959) !important;
             position: sticky !important;
+            /* font-family: 'Poppins', sans-serif !important; */
+
         }
         .navbar li{
             list-style: none;
@@ -36,7 +45,7 @@
         .navbar-nav a{
             text-decoration: none;
             color:white !important;
-            letter-spacing: 1px;
+            letter-spacing: 2px;
             font-weight: 600;
         }
         .newsSect{
@@ -240,22 +249,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body>
-    <div class="logoCont">
-        <img class="logo" src="./images/logo.png" alt="">
-       </div>
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
-        
-        <li class="nav-item dropdown text-light">
-        <div style="display: flex; justify-content:center;align-items:center;">  
-          <div><a style="letter-spacing: 1px;font-weight: 600;text-decoration:none;color:white;margin-left:20px;" href="./home.html">HOME</a></div>
-          <div><a style="float: left;margin-left:-10px;" class="nav-link text-light dropdown-toggle" href="" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a>
-              <ul class="dropdown-menu bg-success " aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#waste">Waste Collection</a></li>
-                <li><a class="dropdown-item" href="#business">Industrial Contribution</a></li>
-              </ul>
-              </div>
-            </li>
+            <h5><strong class="text-light" style="letter-spacing:2px ;">SGS</strong></h5>
         </div>
     
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -264,9 +260,18 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mx-4 mb-lg-0">
             <!-- <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="./home.php">HOME</a>
+              <a class="nav-link active" aria-current="page" href="./home.html">HOME</a>
             </li> -->
-            
+            <li class="nav-item dropdown text-light">
+                <div style="display: flex; justify-content:center;align-items:center;">  
+                  <div><a style="letter-spacing: 1px;font-weight: 600;text-decoration:none;color:white;margin-left:20px;" href="./home.html">HOME</a></div>
+                  <div><a style="float: left;" class="nav-link text-light dropdown-toggle" href="" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a>
+                    <ul class="dropdown-menu bg-success " aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#waste">Waste Collection</a></li>
+                        <li><a class="dropdown-item" href="#business">Industrial Contribution</a></li>
+                    </ul>
+                </div>
+            </li>
             <li class="nav-item">
               <a class="nav-link" href="./detector.html">DETECTOR</a>
             </li>
@@ -277,7 +282,7 @@
               <a class="nav-link" href="./about.html">ABOUT</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./index.html">LOGOUT</a>
+              <a class="nav-link" href="./index.php">LOGOUT</a>
             </li>
           </ul>
           <!-- <form class="d-flex">

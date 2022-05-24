@@ -18,9 +18,17 @@
             /* background: linear-gradient(rgba(207, 255, 207, 0.805),rgba(107, 242, 198, 0.805)) !important; */
             /* width: 100vw;
             height: 100vh; */
+            font-family:'Times New Roman', Times, serif !important;
+
         }
         .navbar{
-            background-color: rgba(2, 133, 28, 0.7) !important;
+            position: fixed !important;
+            top: 0;
+            z-index: 100;
+            font-size: 16px;
+            background-color: rgba(3, 122, 213, 0.959) !important;
+            position: sticky !important;
+            /* font-family: 'Poppins', sans-serif !important; */
         }
         .navbar li{
             list-style: none;
@@ -106,17 +114,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
-        
-        <li class="nav-item dropdown text-light">
-        <div style="display: flex; justify-content:center;align-items:center;">  
-          <div><a style="letter-spacing: 1px;font-weight: 600;text-decoration:none;color:white;margin-left:20px;" href="./home.html">HOME</a></div>
-          <div><a style="float: left;margin-left:-10px;" class="nav-link text-light dropdown-toggle" href="" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a>
-              <ul class="dropdown-menu bg-success " aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#waste">Waste Collection</a></li>
-                <li><a class="dropdown-item" href="#business">Industrial Contribution</a></li>
-              </ul>
-              </div>
-            </li>
+            <h5><strong class="text-light" style="letter-spacing:2px ;">SGS</strong></h5>
         </div>
     
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -127,7 +125,16 @@
             <!-- <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="./home.html">HOME</a>
             </li> -->
-            
+            <li class="nav-item dropdown text-light">
+                <div style="display: flex; justify-content:center;align-items:center;">  
+                  <div><a style="letter-spacing: 1px;font-weight: 600;text-decoration:none;color:white;margin-left:20px;" href="./home.html">HOME</a></div>
+                  <div><a style="float: left;" class="nav-link text-light dropdown-toggle" href="" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a>
+                    <ul class="dropdown-menu bg-success " aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#waste">Waste Collection</a></li>
+                        <li><a class="dropdown-item" href="#business">Industrial Contribution</a></li>
+                    </ul>
+                </div>
+            </li>
             <li class="nav-item">
               <a class="nav-link" href="./detector.html">DETECTOR</a>
             </li>

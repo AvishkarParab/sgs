@@ -15,6 +15,7 @@
     @import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
 
     body{
+        width: 100vw;
         /* font-family: 'Poppins', sans-serif !important; */
         font-family: 'Cinzel', serif !important;
         scroll-behavior: smooth;
@@ -41,8 +42,14 @@
             letter-spacing: 2px;
             font-weight: 600;
         }
-        .galCont{
-            /* border: 1px solid red; */
+        .box1{
+            margin-left: 10px;
+            padding: 20px 0px;
+            width: 98vw;
+            border-radius: 10px;
+            border: 2px solid rgb(21, 20, 20);
+            background:linear-gradient(rgba(0, 0, 0, 0.838),rgba(0, 0, 0, 0.625));
+            box-shadow: 5px 6px 3px rgba(52, 51, 51, 0.621);
             
         }
         .imageCont{
@@ -57,13 +64,25 @@
             height: 200px;
             position: absolute;
             border-radius: 10px;
+            border: 1px solid white;
             box-shadow: 5px 6px 2px black;
         }
+        .imageCont img:hover{
+            transform: scale(1.1);
+            transition: .3s all ease-in-out;
+            box-shadow: 5px 6px 2px rgba(243, 241, 241, 0.804);
+        }
         .desp{
-            border: 3px solid green;
+            background: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.6));
+            border: 3px solid black;
             box-shadow: 7px 8px 2px black;
             border-radius: 20px;
             padding: 10px 20px;
+            color: white;
+        }
+        .desp:hover{
+            transition: .3s all ease-in-out;
+            background: linear-gradient(rgba(0, 0, 0, 0.675),rgba(0, 0, 0, 0.451));
         }
         .desp p{
             font-size: 18px;
@@ -127,10 +146,11 @@
       </div>
     </nav>
     <br>
-        <h2 class="text-center text-success">ABOUT US</h2>
+        <h2 class="text-center text-success"><strong>ABOUT US</strong></h2>
         <br><br><br>
-        <h3 class="mx-5 text-dark text-center" id="gallery">Project Gallery</h3>
-        <h4 class="mx-3">MAKING OF PROJECT </h4><br><br>
+        <h3 class="mx-5 text-dark text-center" id="gallery"><strong>Project Gallery</strong></h3>
+       <div class="box1 container-fluid">
+        <h4 class="mx-3 text-light">MAKING OF PROJECT </h4><br>
         <div class="container-fluid galCont row">
             <div class="imageCont col-3" data-aos="zoom-out-up">
                 <img src="./images/prog1.jpeg" alt=".">
@@ -144,8 +164,11 @@
             <div class="imageCont col-3" data-aos="zoom-out-up">
                 <img src="./images/prog4.jpeg" alt=".">
             </div>
-        </div><br>
-        <h4 class="mx-3">DISPLAY OF PROJECT </h4><br>
+        </div>
+       </div>
+        <br>
+        <div  class="box1 container-fluid">
+        <h4 class="mx-3 text-light">DISPLAY OF PROJECT </h4><br>
         <div class="container-fluid galCont row">
             <div class="imageCont col-3" data-aos="zoom-out-up">
                 <img src="./images/display1.jpeg" alt=".">
@@ -156,16 +179,19 @@
             <div class="imageCont col-3" data-aos="zoom-out-up">
                 <img src="./images/view1.jpeg" alt=".">
             </div>
+            <div class="imageCont col-3" data-aos="zoom-out-up">
+                <img src="./images/dis4.jpeg" alt=".">
+            </div>
+        </div>
         </div>
         <br><br><br>
-        <h3 class="mx-5 text-success" id="description">Project Description</h3>
+        <h3 class="mx-5 text-center text-dark" id="description"><strong>Project Description</strong></h3>
         <br>
-        <h4 class="text-success text-center mt-3">Title :- <strong> SMART GARBAGE SEGREGATION</strong> </h4><br><br>
+        <h4 class=" text-center text-succ mt-3">Title :- <strong> SMART GARBAGE SEGREGATION</strong> </h4><br><br>
         <div class="desp container text-center mb-5" data-aos="zoom-out-up">
-            <br>
-            <p class="text-start">
+            <p class="text-start text-light p-3">
             <strong>Description:- 
-                <br>
+                <br><br>
             </strong>Developing this project has been a great experience. We have learned a diverse range of skills in different 
             fields, such as IOT and programming languages such as C++. We also worked on the Arduino UNO. To 
             obtain the final result we have had to work with many different technologies.
@@ -177,8 +203,11 @@
             </p>
         </div>
         <br><br>
-        <h3 class="mx-5 text-success" id="similar">Similar Project</h3>
+        <h3 class="mx-5 text-center text-dark" id="similar"><strong>Similar Project</strong></h3>
         <br>
+        <div>
+            
+        </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 <script>

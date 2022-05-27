@@ -14,11 +14,14 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
         body{
-            /* background: linear-gradient(rgba(207, 255, 207, 0.805),rgba(107, 242, 198, 0.805)) !important; */
-            /* width: 100vw;
-            height: 100vh; */
-            font-family:'Times New Roman', Times, serif !important;
+            background: linear-gradient(rgba(2c45, 242, 242, 0.8),rgba(216, 216, 216, 0.6)) !important;
+            /* width: 100vw; */
+            height: 100vh;
+            /* font-family:'Times New Roman', Times, serif !important; */
+            font-family: 'Cinzel', serif !important;
+
 
         }
         .navbar{
@@ -26,17 +29,21 @@
             top: 0;
             z-index: 100;
             font-size: 16px;
-            background-color: rgba(3, 122, 213, 0.959) !important;
+            /* background-color: rgba(3, 122, 213, 0.738) !important; */
+            background-color: rgba(211, 211, 211, 0.729) !important;
             position: sticky !important;
+            height: 80px;
             /* font-family: 'Poppins', sans-serif !important; */
+
         }
         .navbar li{
             list-style: none;
+            margin-right: 20px;
         }
         .navbar-nav a{
             text-decoration: none;
-            color:white !important;
-            letter-spacing: 1px;
+            color:black !important;
+            letter-spacing: 2px;
             font-weight: 600;
         }
         .metalCont{
@@ -95,17 +102,21 @@
     bottom: 0px;
 }
 .hoh{
-    background-color: rgba(22, 136, 223, 0.444);
-    border: 1px solid grey;
-    box-shadow: 7px 8px 2px lightslategray;
+    /* background-color: rgba(26, 26, 26, 0.729) !important;
+    background-color: rgba(20, 116, 184, 0.829); */
+
+    background: linear-gradient(to right,rgba(0, 0, 0, 0.845),rgba(0, 0, 0, 0.286),rgba(0, 0, 0, 0.703));
+    border: 1px solid rgb(255, 255, 255);
+    box-shadow: 7px 8px 2px rgba(0, 0, 0, 0.696);
     border-radius: 40px;
+    color: white;
 }
 .hoh:hover{
     transition: .3s all ease;
     transform: translate(-5px,-5px);
     background-color: rgba(20, 116, 184, 0.829);
     border: 1px solid grey;
-    box-shadow: 7px 8px 2px black;
+    box-shadow: 7px 8px 2px rgba(0, 0, 0, 0.63);
     border-radius: 40px;
     color: white;
 }
@@ -113,19 +124,22 @@
     </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container-fluid">
-            <h5><strong class="text-light" style="letter-spacing:2px ;">SGS</strong></h5>
-        </div>
+    <nav class="navbar navbar-expand-lg">
+        
     
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
+        
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto mb-2 mx-4 mb-lg-0">
+        
+          <ul class="navbar-nav mb-2 mb-lg-0" style="margin-left: 400px;">
             <!-- <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="./home.html">HOME</a>
             </li> -->
+            <div class="container-fluid d-flex justify-content-center align-items-center">
+                <h5><strong class="text-dark" style="letter-spacing:2px; margin-right: 20px;">SGS</strong></h5>
+            </div>
             <li class="nav-item dropdown text-light">
                 <div style="display: flex; justify-content:center;align-items:center;">  
                   <div><a style="letter-spacing: 1px;font-weight: 600;text-decoration:none;color:white;margin-left:20px;" href="./home.html">HOME</a></div>
@@ -146,11 +160,9 @@
               <a class="nav-link" href="./about.html">ABOUT</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="./project.html">PROJECT</a>
+              <a class="nav-link" href="./index.html">LOGOUT</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./index.php">LOGOUT</a>
-            </li>
+            
           </ul>
           <!-- <form class="d-flex">
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -230,7 +242,7 @@ const update_nonMetalfillbar =(value)=>{
 const readings = async ()=>{
     try {
         setInterval(async()=>{
-            const resp = await fetch("http://192.168.171.32/get_reading");
+            const resp = await fetch("http://192.168.43.32/get_reading");
         let data = await resp.json();
         console.log(data);
         const totcount = document.querySelector("#totcount");

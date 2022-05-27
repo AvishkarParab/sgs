@@ -15,8 +15,12 @@
         }
     </script>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+
         body{
-            font-family:'Times New Roman', Times, serif !important;
+            font-family: 'Cinzel', serif !important;
+            background: linear-gradient(rgba(245, 242, 242, 0.8),rgba(216, 216, 216, 0.6)) !important;
+
 
         }
         .navbar{
@@ -24,17 +28,21 @@
             top: 0;
             z-index: 100;
             font-size: 16px;
-            background-color: rgba(3, 122, 213, 0.959) !important;
+            /* background-color: rgba(3, 122, 213, 0.738) !important; */
+            background-color: rgba(211, 211, 211, 0.729) !important;
             position: sticky !important;
+            height: 80px;
             /* font-family: 'Poppins', sans-serif !important; */
+
         }
         .navbar li{
             list-style: none;
+            margin-right: 20px;
         }
         .navbar-nav a{
             text-decoration: none;
-            color:white !important;
-            letter-spacing: 1px;
+            color:black !important;
+            letter-spacing: 2px;
             font-weight: 600;
         }
         .dropdown-menu{
@@ -57,16 +65,16 @@
         .newsPro li{
             list-style: none;
             border-radius: 20px;
-            background: radial-gradient(rgba(5, 17, 59, 0.951),rgba(7, 162, 233, 0.726) );
-            border: 2px solid green;
+            background: linear-gradient(rgba(0, 0, 0, 0.829),rgba(0, 0, 0, 0.363),rgba(0, 0, 0, 0.829) );
+            border: 1px solid white;
             padding: 10px;
             color: white;
             letter-spacing: 1px;
             margin-bottom: 5px;
-            height: 450px;
+            height: 480px;
             width: 350px;
             margin: 50px 10px;
-            box-shadow: 8px 8px 3px grey;
+            box-shadow: 8px 8px 3px rgb(38, 38, 38);
             margin-left: 60px;
 
         }
@@ -78,7 +86,7 @@
         .newsPro li:hover{
             transition: .2s all ease;
             color: white;
-            background: radial-gradient(rgba(5, 125, 217, 0.826),rgba(41, 156, 245, 0.623) );
+            background: linear-gradient(rgba(0, 0, 0, 0.868),rgba(0, 0, 0, 0.534),rgba(0, 0, 0, 0.858) );
             backdrop-filter: saturate(100px), blur(6px);
             box-shadow: 7px 6px 5px black;
         }
@@ -101,19 +109,20 @@
     </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container-fluid">
-            <h5><strong class="text-light" style="letter-spacing:2px ;">SGS</strong></h5>
-        </div>
-    
+    <nav class="navbar navbar-expand-lg">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
+        
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto mb-2 mx-4 mb-lg-0">
+        
+          <ul class="navbar-nav mb-2 mb-lg-0" style="margin-left: 400px;">
             <!-- <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="./home.html">HOME</a>
             </li> -->
+            <div class="container-fluid d-flex justify-content-center align-items-center">
+                <h5><strong class="text-dark" style="letter-spacing:2px; margin-right: 20px;">SGS</strong></h5>
+            </div>
             <li class="nav-item dropdown text-light">
                 <div style="display: flex; justify-content:center;align-items:center;">  
                   <div><a style="letter-spacing: 1px;font-weight: 600;text-decoration:none;color:white;margin-left:20px;" href="./home.html">HOME</a></div>
@@ -134,11 +143,9 @@
               <a class="nav-link" href="./about.html">ABOUT</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="./project.html">PROJECT</a>
-            </li>
-            <li class="nav-item">
               <a class="nav-link" href="./index.html">LOGOUT</a>
             </li>
+            
           </ul>
           <!-- <form class="d-flex">
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -148,7 +155,7 @@
       </div>
     </nav>
 <br>
-<h2 class="text-center text-success">NEWS SECTION</h2>
+<h2 class="text-center text-dark">NEWS SECTION</h2>
 
     <div class="newsCont">
         <ul class="newsPro row mx-5">

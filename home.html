@@ -10,8 +10,11 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <style>
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+
         body{
-            font-family:'Times New Roman', Times, serif !important;
+            /* font-family:'Times New Roman', Times, serif !important; */
+            font-family: 'Cinzel', serif !important;
             /* background: linear-gradient(to right ,rgba(107, 242, 198, 0.305),rgba(207, 255, 207, 0.205),rgba(107, 242, 198, 0.305)) !important; */
         }
         body{
@@ -34,8 +37,10 @@
             top: 0;
             z-index: 100;
             font-size: 16px;
-            background-color: rgba(3, 122, 213, 0.959) !important;
+            /* background-color: rgba(3, 122, 213, 0.738) !important; */
+            background-color: white;
             position: sticky !important;
+            height: 40px;
             /* font-family: 'Poppins', sans-serif !important; */
 
         }
@@ -44,7 +49,7 @@
         }
         .navbar-nav a{
             text-decoration: none;
-            color:white !important;
+            color:black !important;
             letter-spacing: 2px;
             font-weight: 600;
         }
@@ -61,10 +66,11 @@
         }
         ::-webkit-scrollbar{
             /* display: none; */
-            width: 5px;
+            width: 7px;
+            height: 7px;
         }
         ::-webkit-scrollbar-thumb{
-            background:green;
+            background:cyan;
             border-radius: 20px;
         }
         ::-webkit-scrollbar-track{
@@ -73,32 +79,42 @@
         }
         .newsPro li{
             width: 100%;
-            height: 80px;
+            height: 85px;
             list-style: none;
             letter-spacing: 1px;
             margin-bottom: 10px;
             border-radius: 20px;
             padding:5px 15px;
-            background-color: white;
-            border: 1px solid green;
-            color: green;
+            overflow: hidden;
+            background: transparent;
+            border: 1px solid white;
+            color: white;
             display: flex;
             justify-content: space-evenly;
             /* align-items: center; */
             box-shadow: 4px 3px 5px grey;
 
         }
-        
+        #waste{
+            color: white !important;
+            padding: 20px;
+            margin-left: 100px;
+            border: 3px solid black;
+            border-radius: 20px;
+            background:linear-gradient(to right,rgba(0, 0, 0, 0.829),rgba(0, 0, 0, 0.363),rgba(0, 0, 0, 0.829));
+            backdrop-filter: saturate(100px) , blur(10px);
+            box-shadow: 9px 7px 3px rgb(104, 104, 104);
+        }
         .newsPro li h6{
             float: left;
             text-align: left;
             font-size: 14px;
         }
         .newsPro li:hover{
-            background-color: rgba(2, 133, 28, 0.4);
+            background-color: rgba(255, 255, 255, 0.397);
             color: black !important;
             transition: .2s all ease;
-            color: green;
+            color: white !important;
             box-shadow: 5px 4px 3px black;
         }
         .newsPro li img{
@@ -121,7 +137,7 @@
             float: right;
             height: 350px;
             width: 350px;
-            border:1px solid green;
+            border:1px solid white;
             margin-right: 10px;
             box-shadow: 5px 4px 5px grey;
             padding: 20px;
@@ -129,8 +145,9 @@
         }
         .box:hover{
             transition: .3s all ease;
-            background-color: rgba(2, 133, 28,0.3);
+            background-color: rgba(255, 255, 255, 0.721);
             box-shadow: 6px 7px 5px black;
+            color: black !important;
 
         }
         .box img{
@@ -185,8 +202,11 @@
         #business{
             /* background: radial-gradient(rgba(2, 133, 0, 0.7),rgba(2, 133, 0, 0.3));
             border-radius: 20px; */
-            /* border: 2px solid green;
-            box-shadow: 4px 5px 5px black; */
+            /* border: 2px solid green; */
+            /* box-shadow: 4px 5px 5px black; */
+        }
+        .business h2{
+            font-weight: bolder;
         }
         .busi_card{
             margin: 10px 20px;
@@ -197,13 +217,20 @@
             box-shadow: 6px 5px 2px darkgrey;
             font-size: 18px;
             letter-spacing: 1px;
+            background: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.6));
+            backdrop-filter: blur(10px);
+            color: white;
             /* background-color: white; */
         }
         .busi_card:hover{
             transition: .4s all ease-in-out;
             box-shadow: 8px 7px 7px black;
-            background-color: rgba(2, 133, 28, 0.5);
+            background-color: rgba(18, 134, 250, 0.5);
             color: white !important;
+        }
+        .busi_card h3{
+            color: cyan;
+            font-weight: bolder;
         }
         .busi_card p{
             margin-top: 10px;
@@ -219,7 +246,8 @@
         .comImg:hover{
             transition: .4s all ease-in-out;
             box-shadow: 8px 7px 7px black;
-            background-color: rgba(2, 133, 28, 0.5);
+            border: 1px solid black;
+            /* background-color: rgba(2, 133, 28, 0.5); */
         }
         .comImg img{
             height: 100%;
@@ -239,6 +267,41 @@
         .dropdown-menu{
             z-index: 100 !important;
         }
+        .landcont{
+            height: 100vh;
+            width: 100vw;
+            position: relative;
+            background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.5)),url("./images/istockphoto-986900214-612x612.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        .filter{
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        .landcont h2{
+            position: absolute;
+            color: whitesmoke;
+            font-weight: 800;
+            top: 30%;
+            left: 100px;
+            letter-spacing: 2px;
+        }
+        .landcont h1{
+            position: absolute;
+            color: whitesmoke;
+            font-weight: 800;
+            top: 50px;
+            left: 30%;
+            font-size: 40px;
+        }
+        .landimg{
+            /* margin-left: 120px; */
+            width: 100%;
+            height: 100vh;
+            z-index: -10;
+        }
+        
     </style>
     <script>
         window.onload=()=>{
@@ -249,9 +312,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body>
+   
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
-            <h5><strong class="text-light" style="letter-spacing:2px ;">SGS</strong></h5>
+            <h5><strong class="text-dark" style="letter-spacing:2px ;">SGS</strong></h5>
         </div>
     
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -282,8 +346,12 @@
               <a class="nav-link" href="./about.html">ABOUT</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./index.php">LOGOUT</a>
+                <a class="nav-link" href="./project.html">PROJECTS</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html">LOGOUT</a>
+            </li>
+            
           </ul>
           <!-- <form class="d-flex">
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -292,95 +360,33 @@
         </div>
       </div>
     </nav>
-    <div class="carou container" data-aos="zoom-in">
-    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
-
-
-  </div>
-  <div class="carousel-inner">
-  <div class="carousel-item active">
-      <img src="https://w.ndtvimg.com/domain/3/2017/02/14120059/650_BSI_4.jpg" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Singapore’s ‘Rubbish Island’</h5>
-        <p>The word ‘landfill’ immediately brings to mind an image of a smelly mountain of rubbish, because that’s what it usually is. Now prepare to get dazzled by a landfill that is a bio-diversity hotspot that is home to flourishing mangroves, rich coral reefs and a capital of birds and marine life. Welcome to the Semakau Landfill,
-             Singapore’s first offshore landfill, and now the only remaining landfill in the city-state.</p>
-      </div>
+    <div class="landcont">
+        <div class="filter"></div>
+        <h1 class="text-light text-center">SMART GARBAGE SEGREGATION</h1>
+        <h2 id="typed"></h2>
+        
     </div>
-    <div class="carousel-item ">
-      <img src="https://w.ndtvimg.com/domain/3/2017/02/14120059/650_BSI_1.jpg" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h5><strong>Columbia’s Recycling Solution</strong></h5>
-        <p>Colombia’s municipalities produce around 28,800 tonnes of solid waste per day, with 10,000 tonnes
-             of this waste being generated by the main cities of Bogotá, Cali, Medellín and Barranquilla. 
-             To overcome their serious waste problem, Colombia came up with the idea of ECOBOT –
-             A recycling initiative that promotes the culture of recycling across the country.</p>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img src="https://w.ndtvimg.com/domain/3/2017/02/14120059/650_BSI_2.jpg" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Indonesia’s Free Health Care</h5>
-        <p>Malang, a city in Indonesia, generated more than 55,000 tonnes of waste every day. 
-            It was also a city where a majority of people did not have health insurance. These two issues may seem unconnected, but Dr. Gamala Albinsaid, a healthcare entrepreneur and CEO of health company Indonesia Medika saw this as a huge social opportunity.
-             He created Garbage Clinical Insurance which let people trade garbage for medical services and medicines.</p>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img src="https://w.ndtvimg.com/domain/3/2017/02/14120059/650_BSI_3.jpg" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Sweden Is Showing The World How To Really Take Out The Trash</h5>
-        <p>It sounds incredible, but Sweden has run out of trash and is actually asking other countries for their garbage so as it can keep its recycling plants running.Less than one percent of Sweden’s household waste goes into the landfill dump; the rest is recycled in different ways. The 32 waste management
-             plants in Sweden today produce heat for 810,000 Swedish households and electricity for about 250,000 private houses..</p>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img src="https://w.ndtvimg.com/domain/3/2017/02/14120059/650x400.jpg" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h5> Uganda’s Amusement Park From Trash</h5>
-        <p>Artist and environmentalist Ruganzu Bruno has created an amusement park for the children living in the slums of Kampala in Uganda. However, this is no ordinary amusement park, but one built entirely by waste. Bruno first collected all the waste generated by the villagers there and then, with their help, refashioned the waste to make swings and life-size board games.
-             The goal of the artist is to make more than 100 such similar amusement parks in other parts of Uganda..</p>
-      </div>
-    </div>
-    
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
-    </div>
-
-    <br><br><br><br>
-    <div id="waste" class="row container-fluid mx-0 mb-5" style="position:relative;">
-        <div class="col-12 col-md-10 col-lg-9 row mx-0">
-            <h2 class="text-center text-uppercase text-success" data-aos="fade-up">Ways of garbage collection</h2>
+    <br><br>
+    <div id="waste" class="row container mb-5">
+        <div class="col-12 col-md-10 col-lg-9  row mx-0">
+            <h2 class="text-center text-uppercase" data-aos="fade-up">Ways of garbage collection</h2>
         <div class="cardCont" data-aos="fade-up">
             <div class="box">
-                <h4 class="text-center text-success mt-3">Residential Waste Pickup</h4><br>
+                <h4 class="text-center  mt-3">Residential Waste Pickup</h4><br>
                 <img class="text-center" src="https://www.mjstraders.com/images/thumbs/0006303_alb-15-240l-plastic-dustbin-240l_360.jpeg" alt="">
             </div>
             <div class="box">
-            <h4 class="text-center text-success mt-3">Roll-Off Dumpster</h4><br>
+            <h4 class="text-center  mt-3">Roll-Off Dumpster</h4><br>
             <img class="text-center" src="https://www.kindpng.com/picc/m/722-7220412_dumpster-hd-png-download.png" alt="">
             </div>
             <div class="box">
-            <h4 class="text-center text-success mt-3">Large Trash Pickup</h4><br>
+            <h4 class="text-center  mt-3">Large Trash Pickup</h4><br>
             <img class="text-center me-3" src="https://thumbs.dreamstime.com/b/bulky-waste-pick-up-rgb-color-icon-refuse-large-types-household-appliances-furniture-carpets-re-usable-condition-couches-210576721.jpg" alt="">
             </div>
         </div>
         </div>
         <div class="col-12 col-md-2 col-lg-3 newsSect" data-aos="fade-right">
-            <div><h5 class="text-center text-success">QUICK READS</h5></div>
+            <div><h5 class="text-center ">QUICK READS</h5></div>
             <!-- <h5 class="text-center text-success">DAILY NEWS</h5> -->
             <br>
             <ul class="newsPro">
@@ -389,13 +395,81 @@
         </div>
     </div>
     <br><br>
+    <div class="carou container" data-aos="zoom-in">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+    
+    
+      </div>
+      <div class="carousel-inner">
+      <div class="carousel-item active">
+          <img src="https://w.ndtvimg.com/domain/3/2017/02/14120059/650_BSI_4.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Singapore’s ‘Rubbish Island’</h5>
+            <p>The word ‘landfill’ immediately brings to mind an image of a smelly mountain of rubbish, because that’s what it usually is. Now prepare to get dazzled by a landfill that is a bio-diversity hotspot that is home to flourishing mangroves, rich coral reefs and a capital of birds and marine life. Welcome to the Semakau Landfill,
+                 Singapore’s first offshore landfill, and now the only remaining landfill in the city-state.</p>
+          </div>
+        </div>
+        <div class="carousel-item ">
+          <img src="https://w.ndtvimg.com/domain/3/2017/02/14120059/650_BSI_1.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5><strong>Columbia’s Recycling Solution</strong></h5>
+            <p>Colombia’s municipalities produce around 28,800 tonnes of solid waste per day, with 10,000 tonnes
+                 of this waste being generated by the main cities of Bogotá, Cali, Medellín and Barranquilla. 
+                 To overcome their serious waste problem, Colombia came up with the idea of ECOBOT –
+                 A recycling initiative that promotes the culture of recycling across the country.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://w.ndtvimg.com/domain/3/2017/02/14120059/650_BSI_2.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Indonesia’s Free Health Care</h5>
+            <p>Malang, a city in Indonesia, generated more than 55,000 tonnes of waste every day. 
+                It was also a city where a majority of people did not have health insurance. These two issues may seem unconnected, but Dr. Gamala Albinsaid, a healthcare entrepreneur and CEO of health company Indonesia Medika saw this as a huge social opportunity.
+                 He created Garbage Clinical Insurance which let people trade garbage for medical services and medicines.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://w.ndtvimg.com/domain/3/2017/02/14120059/650_BSI_3.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Sweden Is Showing The World How To Really Take Out The Trash</h5>
+            <p>It sounds incredible, but Sweden has run out of trash and is actually asking other countries for their garbage so as it can keep its recycling plants running.Less than one percent of Sweden’s household waste goes into the landfill dump; the rest is recycled in different ways. The 32 waste management
+                 plants in Sweden today produce heat for 810,000 Swedish households and electricity for about 250,000 private houses..</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://w.ndtvimg.com/domain/3/2017/02/14120059/650x400.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5> Uganda’s Amusement Park From Trash</h5>
+            <p>Artist and environmentalist Ruganzu Bruno has created an amusement park for the children living in the slums of Kampala in Uganda. However, this is no ordinary amusement park, but one built entirely by waste. Bruno first collected all the waste generated by the villagers there and then, with their help, refashioned the waste to make swings and life-size board games.
+                 The goal of the artist is to make more than 100 such similar amusement parks in other parts of Uganda..</p>
+          </div>
+        </div>
+        
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+        </div>
+    <br><br>
     <div id="business" class="container p-4">
-        <h2 class="text-center text-success" data-aos="fade-up">INDUSTRIAL CONTRIBUTION</h2>
+        <h2 class="text-center" data-aos="fade-up">INDUSTRIAL CONTRIBUTION</h2>
         <br><br>
         <div class="d-flex justify-content-evenly align-items-center">
         <div class="busi_card text-center" data-aos="fade-left"
             data-aos-duration="500">
-            <h3 class="text-center text-success">UNILEVER</h3>
+            <h3 class="text-center">UNILEVER</h3>
             <p>
                 There’s a good reason why Unilever often tops the list of best zero waste companies. The company achieved 
                 its Zero-Waste-to-Landfill goal in 2016, six years ahead of schedule, and has maintained it ever since.
@@ -413,7 +487,7 @@
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Procter_%26_Gamble_logo.svg/1200px-Procter_%26_Gamble_logo.svg.png" alt="">
         </div>
         <div class="busi_card text-center" data-aos="zoom-in-left">
-            <h3 class=" text-success">Procter & Gamble</h3>
+            <h3 class="">Procter & Gamble</h3>
             <p class="">
             This company launched its Zero Manufacturing Waste to Landfill program in 2008 and has made steady progress since then. 
             By 2013, 45 of their manufacturing facilities around the world had gone zero waste, and by 2018 they had successfully
@@ -424,7 +498,7 @@
         <br><br>   
         <div class="d-flex justify-content-evenly align-items-center">
         <div class="busi_card text-center" data-aos="zoom-in-left">
-            <h3 class="text-center text-success">Google</h3>
+            <h3 class="text-center">Google</h3>
             <p>
             You wouldn’t expect this tech behemoth to be one of the major zero-waste companies in North America,
              but Google is well on its way. As of 2016, six of the company’s data centers had achieved 100% zero 
@@ -443,7 +517,7 @@
             <img src="https://mma.prnewswire.com/media/583287/MARS__INCORPORATED_LOGO.jpg?p=facebook" alt="">
         </div>
         <div class="busi_card text-center" data-aos="zoom-in-left">
-            <h3 class="text-center text-success">Mars, Inc.</h3>
+            <h3 class="text-center">Mars, Inc.</h3>
             <p>
             Committed to the zero waste cause since 2007, in 2016 this food product maker succeeded in achieving
              zero manufacturing waste to landfill at all 126 of its factories worldwide.
@@ -455,7 +529,7 @@
         <br><br>
         <div class="d-flex justify-content-evenly align-items-center">
         <div class="busi_card text-center" data-aos="zoom-in-right">
-            <h3 class="text-center text-success">Sierra Nevada</h3>
+            <h3 class="text-center">Sierra Nevada</h3>
             <p>
             Since 2013, Sierra Nevada has been diverting 99.8% of its solid waste from landfill. 
             As a beer manufacturer, the majority of its production waste is brewing byproducts like barley and hops,
@@ -479,6 +553,9 @@
                 </span>
             </div>
         </div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 <script src="./script.js"></script>
 <script>
      AOS.init();
@@ -531,6 +608,21 @@ const caroh = document.querySelectorAll(".carousel-caption h5");
     });
 
  }
+
+ var typed = new Typed('#typed', {
+  strings: [
+    'RECYCLE IT ALL, NO MATTER HOW SMALL !!',
+    "SENSING TRASH LEVEL .",
+    'REDUCE ! REUSE ! RECYCLE !',
+    'Have a great day!'
+  ],
+  typeSpeed: 60,
+  fadeOut: true,
+  fadeOutClass: 'typed-fade-out',
+  fadeOutDelay: 200,
+  loop: true,
+  loopCount: Infinity,
+ });
 
 </script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>

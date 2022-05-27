@@ -67,7 +67,7 @@
     border-top-right-radius: 0px;
     border-top-left-radius: 0px;
     overflow: hidden;
-    box-shadow: 5px 6px 2px grey;
+    box-shadow: 5px 6px 2px black;
     
 }
 .metalfillbar,.nonmetalfillbar{
@@ -95,7 +95,7 @@
     bottom: 0px;
 }
 .hoh{
-    background-color: rgba(2, 133, 28, 0.3);
+    background-color: rgba(22, 136, 223, 0.444);
     border: 1px solid grey;
     box-shadow: 7px 8px 2px lightslategray;
     border-radius: 40px;
@@ -103,10 +103,11 @@
 .hoh:hover{
     transition: .3s all ease;
     transform: translate(-5px,-5px);
-    background-color: rgba(2, 133, 28, 0.3);
+    background-color: rgba(20, 116, 184, 0.829);
     border: 1px solid grey;
     box-shadow: 7px 8px 2px black;
     border-radius: 40px;
+    color: white;
 }
 
     </style>
@@ -145,6 +146,9 @@
               <a class="nav-link" href="./about.html">ABOUT</a>
             </li>
             <li class="nav-item">
+                <a class="nav-link" href="./project.html">PROJECT</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="./index.php">LOGOUT</a>
             </li>
           </ul>
@@ -160,7 +164,7 @@
     <br><br>
     <div class="container-fluid row mx-0 indCont" data-aos="zoom-out-up">
         <div class="col-5 row mx-0 hoh ">
-            <h5 class="text-center text-success fs-4 mt-4">Total peices detected :- <span id="totcount"></span></h5>
+            <h5 class="text-center fs-4 mt-4">Total peices detected :- <span id="totcount"></span></h5>
             <div class="col-6 metalCont">
                 <div class="metalGlass">
                     <div class="metalfillbar"></div>
